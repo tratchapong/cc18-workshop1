@@ -97,7 +97,7 @@ header .current {
 }
 
 .showcase h1 {
-	font-size: 7vw;
+	font-size: 56px;
 }
 
 .showcase p {
@@ -160,14 +160,23 @@ header .current {
 /* Footer */
 
 footer {
-	width: 100%;
 	height: 60px;
 	background-color: skyblue;
 	color: whitesmoke;
 	display: grid;
 	place-items: center;
-	position: absolute;
-	bottom: 0;
+}
+
+/* About Page */
+
+.main-wrapper {
+	display : flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.main-wrapper main {
+	flex-grow: 1;
 }
 
 /* Responsive */
@@ -204,10 +213,6 @@ footer {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-	}
-
-	footer {
-		position: relative;
 	}
 
 }
